@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Songs Like Us — Songs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">songs like us.</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="songs.html">Songs</a>
+      <a href="memories.html">Memories</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="page-title">
+      <p class="eyebrow">THE PLAYLIST</p>
+      <h1>Our songs.</h1>
+      <p>Six songs, six different moods.</p>
+    </div>
+
+    <div class="search-wrap">
+      <input id="searchInput" type="text" placeholder="Search song or artist...">
+    </div>
+
+    <section id="songList" class="track-list large">
+      <article class="track searchable" data-search="john wayne cigarette after sex">
+        <img class="cover cover-image" src="covers/john-wayne.jpg" alt="John Wayne cover">
+        <div class="track-info">
+          <h3>John Wayne</h3>
+          <p>Cigarette After Sex</p>
+          <span class="tag">dreamy</span>
+        </div>
+        <button class="play-btn" data-song="John Wayne" data-audio="audio/john-wayne.mp3">▶</button>
+      </article>
+
+      <article class="track searchable" data-search="the long faces jane">
+        <img class="cover cover-image" src="covers/the-long-faces.jpg" alt="The Long Faces cover">
+        <div class="track-info">
+          <h3>The Long Faces</h3>
+          <p>Jane!</p>
+          <span class="tag">indie</span>
+        </div>
+        <button class="play-btn" data-song="The Long Faces" data-audio="audio/the-long-faces.mp3">▶</button>
+      </article>
+
+      <article class="track searchable" data-search="toronto 2014 daniel caesar malik">
+        <img class="cover cover-image" src="covers/toronto-2014.jpg" alt="Toronto 2014 cover">
+        <div class="track-info">
+          <h3>Toronto 2014</h3>
+          <p>Daniel Caesar</p>
+          <span class="tag">late night</span>
+        </div>
+        <button class="play-btn" data-song="Toronto 2014" data-audio="audio/toronto-2014.mp3">▶</button>
+      </article>
+
+      <article class="track searchable" data-search="tunggu aku di jakarta so7 sheila on 7">
+        <img class="cover cover-image" src="covers/tunggu-aku-di-jakarta.jpg" alt="Tunggu Aku di Jakarta cover">
+        <div class="track-info">
+          <h3>Tunggu Aku di Jakarta</h3>
+          <p>Sheila On 7</p>
+          <span class="tag">nostalgic</span>
+        </div>
+        <button class="play-btn" data-song="Tunggu Aku di Jakarta" data-audio="audio/tunggu-aku-di-jakarta.mp3">▶</button>
+      </article>
+
+      <article class="track searchable" data-search="livin on a prayer bon jovi">
+        <img class="cover cover-image" src="covers/livin-on-a-prayer.jpg" alt="Livin on a Prayer cover">
+        <div class="track-info">
+          <h3>Livin' on a Prayer</h3>
+          <p>Bon Jovi</p>
+          <span class="tag">classic</span>
+        </div>
+        <button class="play-btn" data-song="Livin' on a Prayer" data-audio="audio/livin-on-a-prayer.mp3">▶</button>
+      </article>
+
+      <article class="track searchable" data-search="love epiphany reality club nayla">
+        <img class="cover cover-image" src="covers/love-epiphany.jpg" alt="Love Epiphany cover">
+        <div class="track-info">
+          <h3>Love Epiphany</h3>
+          <p>Reality Club</p>
+          <span class="tag">indie pop</span>
+        </div>
+        <button class="play-btn" data-song="Love Epiphany" data-audio="audio/love-epiphany.mp3">▶</button>
+      </article>
+    </section>
+
+    <p id="noResults" class="empty hidden">No songs found.</p>
+  </main>
+
+  <div id="playerBar" class="player-bar hidden">
+    <img id="playerCover" src="" alt="">
+    <div class="player-details">
+      <strong id="playerTitle">—</strong>
+      <span id="playerArtist">—</span>
+    </div>
+    <audio id="audioPlayer" controls></audio>
+  </div>
+
+  <footer>
+    <p>songs like us.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
