@@ -200,3 +200,102 @@ main {
   font-size: 16px;
   margin-bottom: 4px;
 }
+
+.track-info p {
+  color: var(--gray);
+  font-size: 13px;
+}
+
+.track-info small {
+  display: block;
+  color: var(--gray);
+  margin-top: 6px;
+  font-size: 11px;
+}
+
+.play-btn {
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--orange);
+  color: white;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  transform: scale(1.06);
+}
+
+.page {
+  padding: 75px 0 90px;
+}
+
+.page-title {
+  margin-bottom: 35px;
+}
+
+.page-title h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 54px;
+  margin-bottom: 8px;
+}
+
+.page-title > p:last-child {
+  color: var(--gray);
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.search-wrap {
+  margin-bottom: 20px;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 15px 17px;
+  border: 1px solid var(--line);
+  background: white;
+  border-radius: 4px;
+  font: inherit;
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: var(--orange);
+}
+
+.large .track {
+  padding: 17px;
+}
+
+.large .cover {
+  width: 70px;
+  height: 70px;
+  flex-basis: 70px;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 8px;
+  background: #f0ebe4;
+  color: #666;
+  border-radius: 20px;
+  font-size: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.empty {
+  color: var(--gray);
+  padding: 20px 0;
+}
+
+.memory-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
