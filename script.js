@@ -34,3 +34,20 @@ if (audio) {
   audio.addEventListener('pause', () => buttons.forEach(b => b.textContent = '▶'));
   audio.addEventListener('ended', () => buttons.forEach(b => b.textContent = '▶'));
 }
+
+const searchInput = document.getElementById('searchInput');
+if (searchInput) {
+  const songs = document.querySelectorAll('.searchable');
+  const noResults = document.getElementById('noResults');
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase().trim();
+    let visible = 0;
+    songs.forEach(song => {
+      const match = song.dataset.search.includes(query);
+      song.style.display = match ? 'flex' : 'none';
+      if (match) visible++;
+    });
+    noResults.classList.toggle('hidden', visible !== 0);
+  });
+}
+
