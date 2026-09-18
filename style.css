@@ -30,6 +30,7 @@ body {
   border-bottom: 1px solid var(--line);
   background: rgba(247,243,237,.94);
 }
+
 .logo {
   color: var(--dark);
   text-decoration: none;
